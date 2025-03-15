@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -48,22 +49,25 @@ export function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="relative text-sm font-medium hover:text-black transition-colors duration-200 px-1 py-2"
+              className="relative text-sm font-medium hover:text-black dark:hover:text-white transition-colors duration-200 px-1 py-2"
             >
               <span className="relative z-10">{link.name}</span>
               <span className="absolute inset-0 bg-accent scale-x-0 origin-left rounded transition-transform duration-300 ease-out hover:scale-x-100" />
             </a>
           ))}
+          <ThemeToggle />
         </nav>
 
         {/* Mobile Menu Button */}
-        <button
-          className="md:hidden"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
-        >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center gap-4">
+          <ThemeToggle />
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+          >
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
@@ -78,7 +82,7 @@ export function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-lg font-medium hover:text-black transition-colors duration-200"
+              className="text-lg font-medium hover:text-black dark:hover:text-white transition-colors duration-200"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {link.name}
