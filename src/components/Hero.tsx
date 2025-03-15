@@ -13,7 +13,7 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto px-6 py-12 relative z-10">
-        <div className="max-w-4xl space-y-4 animate-slide-up opacity-0" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
+        <div className="max-w-4xl space-y-4 animate-fade-in" style={{ animationDuration: "0.8s" }}>
           <div className="inline-block bg-accent px-4 py-1.5 rounded-full">
             <p className="text-sm font-medium">Frontend Developer</p>
           </div>

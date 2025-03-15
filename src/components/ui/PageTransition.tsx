@@ -11,7 +11,7 @@ export function PageTransition({ children, className }: PageTransitionProps) {
   return (
     <div
       className={cn(
-        "animate-fade-in opacity-0",
+        "animate-fade-in",
         className
       )}
     >
