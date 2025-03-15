@@ -10,7 +10,7 @@ export function ThemeToggle() {
 
   return (
     <div className="flex items-center justify-center">
-      <ToggleGroup type="single" value={theme} onValueChange={(value) => value && setTheme(value)}>
+      <ToggleGroup type="single" value={theme} onValueChange={(value) => value && setTheme(value as "light" | "dark")}>
         <ToggleGroupItem value="light" aria-label="Light mode">
           <Sun className="h-4 w-4" />
         </ToggleGroupItem>
