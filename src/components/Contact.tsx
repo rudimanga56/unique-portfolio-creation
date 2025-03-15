@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Mail, MessageSquare, Send } from "lucide-react";
 
@@ -6,7 +5,7 @@ export function Contact() {
   return (
     <section id="contact" className="section-padding">
       <div className="container mx-auto px-6">
-        <div className="max-w-3xl mx-auto text-center mb-16 animate-slide-up opacity-0" style={{ animationDelay: "0.1s", animationFillMode: "forwards" }}>
+        <div className="max-w-3xl mx-auto text-center mb-16 opacity-100">
           <h2 className="heading-lg mb-4">Get in Touch</h2>
           <p className="body-lg text-muted-foreground">
             I'm always open to new opportunities and collaborations. Feel free to
@@ -14,7 +13,7 @@ export function Contact() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto animate-slide-up opacity-0" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
+        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto opacity-100">
           <div className="space-y-8">
             <div className="space-y-4">
               <h3 className="heading-sm">Contact Information</h3>

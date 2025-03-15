@@ -47,7 +47,7 @@ export function Projects() {
   return (
     <section id="projects" className="section-padding bg-secondary/30">
       <div className="container mx-auto px-6">
-        <div className="max-w-3xl mx-auto text-center mb-16 animate-slide-up opacity-0" style={{ animationDelay: "0.1s", animationFillMode: "forwards" }}>
+        <div className="max-w-3xl mx-auto text-center mb-16 opacity-100"> {/* Removed animation classes */}
           <h2 className="heading-lg mb-4">Featured Projects</h2>
           <p className="body-lg text-muted-foreground">
             Here are some of my recent projects. Each project showcases different
@@ -55,7 +55,7 @@ export function Projects() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8 animate-slide-up opacity-0" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-8 opacity-100"> {/* Removed animation classes */}
           {projects.map((project, index) => (
             <div
               key={project.id}

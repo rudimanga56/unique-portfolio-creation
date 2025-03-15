@@ -44,7 +44,7 @@ export function About() {
   return (
     <section id="about" className="section-padding">
       <div className="container mx-auto px-6">
-        <div className="max-w-3xl mx-auto text-center mb-16 animate-slide-up opacity-0" style={{ animationDelay: "0.1s", animationFillMode: "forwards" }}>
+        <div className="max-w-3xl mx-auto text-center mb-16 opacity-100"> {/* Removed animation classes */}
           <h2 className="heading-lg mb-4">About Me</h2>
           <p className="body-lg text-muted-foreground">
             I'm a passionate frontend developer with a keen eye for design and a 
@@ -54,7 +54,7 @@ export function About() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16 animate-slide-up opacity-0" style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
+        <div className="grid md:grid-cols-2 gap-16 opacity-100"> {/* Removed animation classes */}
           {/* Skills */}
           <div>
             <h3 className="heading-sm mb-6">Skills & Expertise</h3>

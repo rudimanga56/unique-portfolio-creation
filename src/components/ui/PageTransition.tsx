@@ -11,7 +11,7 @@ export function PageTransition({ children, className }: PageTransitionProps) {
   return (
     <div
       className={cn(
-        "animate-fade-in opacity-0 animation-delay-200 animation-fill-forwards",
+        "opacity-100", // Changed from animate-fade-in opacity-0 to make content immediately visible
         className
       )}
     >
